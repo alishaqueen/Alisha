@@ -24,7 +24,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def stream(_, message: Message):
 
-    lel = await message.reply("🔁 **ᴘʀᴏᴄᴇꜱꜱɪɴɢ** ᴢ ᴘʟᴀʏᴇʀ...")
+    lel = await message.reply("🔁 **𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠** 𝐀𝐥𝐢𝐬𝐡𝐚 𝐏𝐥𝐚𝐲𝐞𝐫...")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -33,10 +33,10 @@ async def stream(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="ɢʀᴏᴜᴘ",
-                        url=f"https://t.me/Zaid_Team1"),
+                        url=f"https://t.me/Shayri_Music_Lovers"),
                     InlineKeyboardButton(
                         text="ᴄʜᴀɴɴᴇʟ",
-                        url=f"https://t.me/Zaid_Updates")
+                        url=f"https://t.me/ABOUTABHI")
                 ]
             ]
         )
@@ -65,7 +65,7 @@ async def stream(_, message: Message):
         await message.reply_photo(
         photo=f"{QUE_IMG}",
         reply_markup=keyboard,
-        caption=f"#⃣  ʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛᴇᴅ ꜱᴏɴɢ ɪɴ **Qᴜᴇᴜᴇ** ᴀᴛ ᴘᴏꜱɪᴛɪᴏɴ {position} !\n\n⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {bn} ᴢᴀɪᴅ__")
+        caption=f"#⃣  ʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛᴇᴅ ꜱᴏɴɢ ɪɴ **Qᴜᴇᴜᴇ** ᴀᴛ ᴘᴏꜱɪᴛɪᴏɴ {position} !\n\n⚡ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 {bn} 𝐀𝐥𝐢𝐬𝐡𝐚__")
         return await lel.delete()
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
@@ -73,6 +73,6 @@ async def stream(_, message: Message):
         await message.reply_photo(
         photo=f"{AUD_IMG}",
         reply_markup=keyboard,
-        caption=f"💡 **ɴᴏᴡ ᴘʟᴀʏɪɴɢ** ᴀ ꜱᴏɴɢ ʀᴇQᴜᴇᴛᴇᴅ ʙʏ {costumer} !\n\n⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {bn} ᴢᴀɪᴅ__"
+        caption=f"💡 **ɴᴏᴡ ᴘʟᴀʏɪɴɢ** ᴀ ꜱᴏɴɢ ʀᴇQᴜᴇᴛᴇᴅ ʙʏ {costumer} !\n\n⚡ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 {bn} 𝐀𝐥𝐢𝐬𝐡𝐚__"
         )
         return await lel.delete()
