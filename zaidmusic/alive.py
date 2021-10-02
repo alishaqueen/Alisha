@@ -35,20 +35,20 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@Client.on_message(filters.command(["alive", f"alive@{BOT_USERNAME}"]))
+@Client.on_message(filters.command(["alive", f"alive@QueenAlishaRobot{BOT_USERNAME}"]))
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/95e785dea2717adf59de6.png",
-        caption=f"""**➮𝐳 ʜɪɪ ɪ ᴍ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
+        photo=f"https://telegra.ph/file/66a1ddb05e34513c226a4.jpg",
+        caption=f"""✪✪✪ ʜɪɪ ɪ ᴍ 乛𝘼𝙇𝙄𝙎𝙃𝘼🕊️⃝🦋⁪⁬𝙈𝙐𝙎𝙄𝘾[{BOT_NAME}](https://t.me/QueenAlishaRobot{BOT_USERNAME})✪✪✪
 
-➮ **Zαιԃ Sყʂƚҽɱ Wσɾƙιɳɠ Fιɳҽ**
+➮ **𝐀𝐥𝐢𝐬𝐡𝐚 𝐒𝐞𝐫𝐯𝐞𝐫 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐢𝐧𝐞😇**
 
-➮ **ᴢᴀɪᴅ ᴠᴇʀꜱɪᴏɴ : 5.0 Lҽƚҽʂƚ**
+➮ **ᴢᴀɪᴅ ᴠᴇʀꜱɪᴏɴ : 9.0 Lҽƚҽʂƚ**
 
-➮ **ᴍʏ ᴏᴡɴᴇʀ : [{OWNER_NAME}](https://t.me/{OWNER_NAME})**
+➮ **ᴍʏ ᴏᴡɴᴇʀ : [{OWNER_NAME}](https://t.me/Venom_Hai_Hum{अभिमन्यु सिंह राणा})**
 
 ➮ **ꜱᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ : `{uptime}`**
 
@@ -57,10 +57,10 @@ async def alive(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💫 ɢʀᴏᴜᴘ", url=f"https://t.me/SUPERIOR_SUPPORT"
+                        "💫 ɢʀᴏᴜᴘ", url=f"https://t.me/Shayri_Music_Lovers"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/SUPERIOR_BOTS"
+                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/ABOUTABHI"
                     )
                 ]
             ]
