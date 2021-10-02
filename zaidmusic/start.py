@@ -42,19 +42,19 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        " ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ᴄʜᴀᴛꜱ ☑️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        " ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ᴄʜᴀᴛꜱ ☑️", url=f"https://t.me/QueenAlishaRobot{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
                         " ꜱᴇᴛᴜᴘ⚡", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                        "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 💫", url="https://github.com/Itsunknown-12/Zaid-Vc-Player")
+                        "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 💫", url="https://t.me/Venom_Hai_Hum")
                 ],[
                     InlineKeyboardButton(
-                        "⚡ ᴏꜰꜰɪᴄɪᴀʟ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/SUPERIOR_SUPPORT"
+                        "⚡ ᴏꜰꜰɪᴄɪᴀʟ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Shayri_Music_Lovers"
                     ),
                     InlineKeyboardButton(
-                        "ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/SUPERIOR_BOTS")
+                        "ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/ABOUTABHI")
                 ],[
                     InlineKeyboardButton(
                         " ℹ️ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"
@@ -72,15 +72,15 @@ async def start(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""✅ **ᴢᴀɪᴅ ɪꜱ ʀᴜɴɴɪɴɢ**\n<b>💠 **ᴜᴘᴛɪᴍᴇ:**</b> `{uptime}`""",
+        f"""✅ **𝐀𝐥𝐢𝐬𝐡𝐚 𝐏𝐥𝐚𝐲𝐞𝐫 𝐈𝐬 𝐑𝐮𝐧𝐧𝐢𝐧𝐠**\n<b>💠 **ᴜᴘᴛɪᴍᴇ:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💫 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/SUPERIOR_SUPPORT"
+                        "💫 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Shayri_Music_Lovers"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/SUPERIOR_BOTS"
+                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/ABOUTABHI"
                     )
                 ]
             ]
@@ -94,7 +94,7 @@ async def help(client: Client, message: Message):
 
 **Please press the button below to read the explanation and see the list of available commands powered By Zaid!**
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ""",
+⚡ __Powered by {BOT_NAME} 𝐀𝐥𝐢𝐬𝐡𝐚""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -113,7 +113,7 @@ async def help_(client: Client, message: Message):
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
-⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} 𝐀𝐥𝐢𝐬𝐡𝐚__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -165,7 +165,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 ᴢᴀɪᴅ ꜱᴛᴀᴛᴜꜱ:\n"
+        "🤖 𝐀𝐥𝐢𝐬𝐡𝐚 ꜱᴛᴀᴛᴜꜱ:\n"
         f"• **ᴜᴘᴛɪᴍᴇ:** `{uptime}`\n"
         f"• **ꜱᴛᴀʀᴛ ᴛɪᴍᴇ:** `{START_TIME_ISO}`"
     )
